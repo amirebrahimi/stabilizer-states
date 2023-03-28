@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "stabilizer-states"
+version = "0.1.0"
+description = "A supporting (optional) library for stabilizer-toolkit that provides stabilizer states."
+authors = ["Amir Ebrahimi <github@aebrahimi.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "stabilizer_states"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+debugpy = "1.6.4"
+jupyterlab = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
