@@ -110,6 +110,11 @@ class StabilizerStates:
             print(f"Validation for {num_qubits}-qubit stabilizer dataset:")
             print(f"  Full count of stabilizer states ({full_count}): {'✅' if is_full_set else '❌'}")
 
+        all_unique = len(np.unique(states, axis=1)) == dataset_count
+
+        if show:
+            print(f"  All states unique: {'✅' if all_unique else '❌'}")
+
         # Check property 1
         support = np.count_nonzero(states, axis=1)
         nonzero_power_of_two = np.all(np.mod(np.log2(support), 1) == 0)
@@ -162,6 +167,7 @@ class StabilizerStates:
 
         return (
             is_full_set
+            and all_unique
             and nonzero_power_of_two
             and nonzero_amps_match
             and imaginary_amps_half_support
