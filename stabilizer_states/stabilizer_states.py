@@ -92,8 +92,8 @@ class StabilizerStates:
         :param show: Print the results of each test.
         :return: True if stabilizer states are valid; Otherwise, False.
 
-        García et al. state in https://arxiv.org/abs/1711.07848 establish the following amplitude properties of
-        stabilizer states (Corollary 2):
+        García et al. in https://arxiv.org/abs/1711.07848 establish the following amplitude properties of stabilizer
+        states (Corollary 2):
             1. number of non-zero amplitudes (support) is a power of two
             2. they are unbiased, and every non-zero amplitude is ±1/√|s| or ±i/√|s|, where |s| is the support
             3. the number of imaginary amplitudes is either zero or half the number of non-zero amplitudes
