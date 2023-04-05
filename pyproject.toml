@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stabilizer-states"
-version = "0.1.0"
+version = "0.1.1"
 description = "A supporting (optional) library for stabilizer-toolkit that provides stabilizer states."
 authors = ["Amir Ebrahimi <github@aebrahimi.com>"]
 license = "Apache-2.0"
@@ -9,7 +9,7 @@ packages = [{include = "stabilizer_states"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-numpy = "^1.24.2"
+numpy = "^1.23"
 
 [tool.poetry.group.dev]
 optional = true
